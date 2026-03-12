@@ -1,25 +1,5 @@
 # Arquitetura do Sistema
 
-## Visão geral
-
-O projeto foi estruturado como um sistema multimodal dividido em dois blocos principais:
-
-1. **Projeto na Unreal Engine 5.6.1**
-   - Interface de chat
-   - Blueprints de orquestração
-   - Integração com modelo de linguagem via API
-   - Encaminhamento do áudio para animação facial
-   - Exibição do personagem 3D
-
-2. **Módulo externo local de síntese de voz**
-   - Recebe texto e áudio de referência
-   - Gera arquivo `.wav` localmente
-   - Entrega o resultado ao fluxo da Unreal/Audio2Face
-
-Essa separação permitiu desacoplar a geração textual, a síntese de fala e a animação facial, facilitando testes e integração entre ferramentas.
-
----
-
 ## Componentes principais
 
 ### 1. Interface de entrada
