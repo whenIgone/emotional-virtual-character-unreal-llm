@@ -11,7 +11,7 @@ Protótipo de **personagem virtual emocionalmente responsivo** desenvolvido como
 
 O objetivo do projeto foi construir um sistema capaz de receber uma entrada textual, gerar uma resposta com um modelo de linguagem natural e apresentá-la por meio de um personagem 3D com fala sintetizada e animação facial. [file:201][file:202]
 
-A proposta acadêmica completa também considerava um núcleo de computação afetiva, com resposta emocionalmente modulada e maior expressividade do personagem, mas o protótipo final entregue concentrou-se principalmente na integração entre **LLM + Unreal + síntese de voz + Audio2Face + MetaHuman**. [file:201][file:202]
+A proposta acadêmica completa também considerava um núcleo de computação afetiva, com resposta emocionalmente modulada e maior expressividade do personagem, mas o protótipo final entregue concentrou-se principalmente na integração entre **LLM + Unreal + síntese de voz + Audio2Face + MetaHuman**.
 
 ---
 
