@@ -43,7 +43,15 @@ docs/references.md — referências conceituais e documentação oficial
 ## Privacidade e licenciamento
 Este repositório tem finalidade acadêmica e de portfólio.
 
-Alguns componentes utilizados no protótipo original não podem ser compartilhados por restrições de licença, direitos autorais ou uso de conteúdo de terceiros. Por esse motivo, a ênfase desta publicação está na arquitetura, no fluxo implementado e nos aprendizados técnicos.
+A ênfase desta publicação está na arquitetura, no fluxo implementado e nos aprendizados técnicos.
+
+## Disponibilidade do código
+
+Os arquivos completos do projeto na Unreal Engine e determinados componentes externos não estão incluídos nesta versão pública por questões de:
+- privacidade,
+- restrições de licença,
+- uso de conteúdo de terceiros,
+- e segurança na publicação de caminhos, assets e integrações locais.
 
 ## Autores
 Projeto desenvolvido como Trabalho de Conclusão de Curso em grupo.
