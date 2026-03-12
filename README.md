@@ -9,38 +9,42 @@ Protótipo de **personagem virtual emocionalmente responsivo** desenvolvido como
 
 ## Visão geral
 
-O objetivo do projeto foi construir um sistema capaz de receber uma entrada textual, gerar uma resposta com um modelo de linguagem natural e apresentá-la por meio de um personagem 3D com fala sintetizada e animação facial. [file:201][file:202]
+O objetivo do projeto foi construir um sistema capaz de receber uma entrada textual, gerar uma resposta com um modelo de linguagem natural e apresentá-la por meio de um personagem 3D com fala sintetizada e animação facial.
 
-A proposta acadêmica completa também considerava um núcleo de computação afetiva, com resposta emocionalmente modulada e maior expressividade do personagem, mas o protótipo final entregue concentrou-se principalmente na integração entre **LLM + Unreal + síntese de voz + Audio2Face + MetaHuman**.
+A proposta acadêmica completa também considerava uma camada emocional mais ampla, mas o protótipo final entregue concentrou-se principalmente na integração entre **LLM + Unreal + síntese de voz + Audio2Face + MetaHuman**.
 
 ---
 
-## Arquitetura do sistema
-
-O sistema foi organizado em dois blocos principais:
-
-1. **Projeto Unreal Engine**
-   - Interface de chat
-   - Integração com modelo de linguagem via API
-   - Orquestração dos Blueprints
-   - Encaminhamento do áudio para animação facial
-   - Exibição do personagem 3D
-
-2. **Módulo externo de síntese de voz**
-   - Execução local
-   - Recebe texto e áudio de referência
-   - Gera arquivo `.wav` de saída
-   - Entrega o áudio ao fluxo da Unreal/Audio2Face
-
-### Fluxo real implementado
+## Fluxo do sistema
 
 ```text
 Texto do usuário
-→ LLM via API/plugin na Unreal
+→ Widget de chat na Unreal
+→ modelo de linguagem via API
 → resposta textual
-→ Blueprint da Unreal
 → módulo externo de síntese de voz
 → arquivo .wav
 → Audio2Face
 → MetaHuman
 → resposta falada com animação facial
+```
+
+## Documentação adicional
+Para mais detalhes, consulte:
+
+docs/architecture.md — arquitetura do sistema e fluxo entre módulos
+
+docs/implementation-notes.md — decisões práticas de implementação
+
+docs/limitations.md — restrições técnicas, computacionais e de distribuição
+
+docs/references.md — referências conceituais e documentação oficial
+
+## Privacidade e licenciamento
+Este repositório tem finalidade acadêmica e de portfólio.
+
+Alguns componentes utilizados no protótipo original não podem ser compartilhados por restrições de licença, direitos autorais ou uso de conteúdo de terceiros. Por esse motivo, a ênfase desta publicação está na arquitetura, no fluxo implementado e nos aprendizados técnicos.
+
+## Autores
+Projeto desenvolvido como Trabalho de Conclusão de Curso em grupo.
+
